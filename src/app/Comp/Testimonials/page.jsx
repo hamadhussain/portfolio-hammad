@@ -24,61 +24,124 @@
 
 // export default page;
 
-import React from "react";
-import Embla from "./Embla/page";
+// import React from "react";
+// import Embla from "./Embla/page";
+
+// const Page = () => {
+//   const OPTIONS = { align: "start", dragFree: true, loop: true };
+//   // const SLIDES = [
+//   //   {
+//   //     image: '/work.png',
+//   //     name: 'Tim Bailey',
+//   //     position: 'SEO Specialist, Theme Junction',
+//   //     quote: 'Taylor is a professional Designer he really helps my business by providing value to my business.'
+//   //   },{
+//   //     image: '/work.png',
+//   //     name: 'Tim Bailey',
+//   //     position: 'SEO Specialist, Theme Junction',
+//   //     quote: 'Taylor is a professional Designer he really helps my business by providing value to my business.'
+//   //   },{
+//   //     image: '/work.png',
+//   //     name: 'Tim Bailey',
+//   //     position: 'SEO Specialist, Theme Junction',
+//   //     quote: 'Taylor is a professional Designer he really helps my business by providing value to my business.'
+//   //   },{
+//   //     image: '/work.png',
+//   //     name: 'Tim Bailey',
+//   //     position: 'SEO Specialist, Theme Junction',
+//   //     quote: 'Taylor is a professional Designer he really helps my business by providing value to my business.'
+//   //   },
+//   //   // Add more slides as needed
+//   // ]
+//   const SLIDES = [
+//     {
+//       id: 'p1',
+//       image: "/2.jpg",
+//       name: "Tim Bailey",
+//       position: "SEO Specialist, Theme Junction",
+//       quote:
+//         "Taylor is a professional Designer he really helps my business by providing value to my business.",
+//     },
+//     {
+//       id: 'p2',
+//       image: "/3.jpg",
+//       name: "Sara Connor",
+//       position: "Product Manager, Tech Corp",
+//       quote:
+//         "Taylor's design skills have significantly improved our product's user experience.",
+//     },
+//     {
+//       id: 'p3',
+//       image: "/4.jpg",
+//       name: "John Doe",
+//       position: "Marketing Director, Creative Solutions",
+//       quote:
+//         "Taylor's creativity and attention to detail have made our campaigns stand out.",
+//     },
+//   ];
+//   return (
+//     <div
+//       id="Testimonials"
+//       className="p-24 hidden md:block bg-black text-white flex flex-col space-y-4 md:flex-row justify-around"
+//     >
+//       <div className="">
+//         <h1 className=" text-gradientd t ">My Client's Stories</h1>
+//         <p className=" container">
+//           Empowering people in a new digital journey with my super services
+//         </p>
+//       </div>
+//       <div className="">
+//         <Embla slides={SLIDES} options={OPTIONS} />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Page;
+
+import React, { useState, useEffect } from 'react';
+import EmblaCarousel from './Embla/page'; // Adjust the import path as needed
 
 const Page = () => {
+  const [slides, setSlides] = useState([]);
   const OPTIONS = { align: "start", dragFree: true, loop: true };
-  // const SLIDES = [
-  //   {
-  //     image: '/work.png',
-  //     name: 'Tim Bailey',
-  //     position: 'SEO Specialist, Theme Junction',
-  //     quote: 'Taylor is a professional Designer he really helps my business by providing value to my business.'
-  //   },{
-  //     image: '/work.png',
-  //     name: 'Tim Bailey',
-  //     position: 'SEO Specialist, Theme Junction',
-  //     quote: 'Taylor is a professional Designer he really helps my business by providing value to my business.'
-  //   },{
-  //     image: '/work.png',
-  //     name: 'Tim Bailey',
-  //     position: 'SEO Specialist, Theme Junction',
-  //     quote: 'Taylor is a professional Designer he really helps my business by providing value to my business.'
-  //   },{
-  //     image: '/work.png',
-  //     name: 'Tim Bailey',
-  //     position: 'SEO Specialist, Theme Junction',
-  //     quote: 'Taylor is a professional Designer he really helps my business by providing value to my business.'
-  //   },
-  //   // Add more slides as needed
-  // ]
-  const SLIDES = [
-    {
-      id: 'p1',
-      image: "/2.jpg",
-      name: "Tim Bailey",
-      position: "SEO Specialist, Theme Junction",
-      quote:
-        "Taylor is a professional Designer he really helps my business by providing value to my business.",
-    },
-    {
-      id: 'p2',
-      image: "/3.jpg",
-      name: "Sara Connor",
-      position: "Product Manager, Tech Corp",
-      quote:
-        "Taylor's design skills have significantly improved our product's user experience.",
-    },
-    {
-      id: 'p3',
-      image: "/4.jpg",
-      name: "John Doe",
-      position: "Marketing Director, Creative Solutions",
-      quote:
-        "Taylor's creativity and attention to detail have made our campaigns stand out.",
-    },
-  ];
+
+  useEffect(() => {
+    // Simulate fetching data
+    setTimeout(() => {
+      setSlides([
+        {
+          id: 'p1',
+          image: "/2.jpg",
+          name: "Tim Bailey",
+          position: "SEO Specialist, Theme Junction",
+          quote:
+            "Taylor is a professional Designer he really helps my business by providing value to my business.",
+        },
+        {
+          id: 'p2',
+          image: "/3.jpg",
+          name: "Sara Connor",
+          position: "Product Manager, Tech Corp",
+          quote:
+            "Taylor's design skills have significantly improved our product's user experience.",
+        },
+        {
+          id: 'p3',
+          image: "/4.jpg",
+          name: "John Doe",
+          position: "Marketing Director, Creative Solutions",
+          quote:
+            "Taylor's creativity and attention to detail have made our campaigns stand out.",
+        },
+      ]);
+    }, 1000); // Simulate a delay
+  }, []);
+
+  if (slides.length === 0) {
+    return <div>Loading...</div>; // Show a loading indicator while fetching data
+  }
+
   return (
     <div
       id="Testimonials"
@@ -91,7 +154,7 @@ const Page = () => {
         </p>
       </div>
       <div className="">
-        <Embla slides={SLIDES} options={OPTIONS} />
+        <EmblaCarousel slides={slides} options={OPTIONS} />
       </div>
     </div>
   );
