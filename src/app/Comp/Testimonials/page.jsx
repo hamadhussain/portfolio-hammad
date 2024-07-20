@@ -98,7 +98,7 @@
 // };
 
 // export default Page;
-
+"use client"
 import React, { useState, useEffect } from 'react';
 import EmblaCarousel from './Embla/page'; // Adjust the import path as needed
 
