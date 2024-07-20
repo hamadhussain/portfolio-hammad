@@ -6,7 +6,7 @@ import MyE from "./MyE/page";
 import Skills from "./Skills/page";
 import Footer from "./Footer/page";
 import Contact from "./Contact/page";
-import Testimonials from "./Testimonials//page";
+// import Testimonials from "./Testimonials//page";
 import Recent from "./Recent/page";
 import Work from "./Work/page";
 import AOS from 'aos';
@@ -27,7 +27,6 @@ const Page = () => {
         <Work />
         <MyE />
         <Skills />
-        <Testimonials />
         <Recent />
         <Contact />
         <Footer />

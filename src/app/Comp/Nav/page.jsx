@@ -115,7 +115,7 @@ const Navbar = () => {
                     Skills
                   </p>
                 </Link>
-                <Link
+                {/* <Link
                   activeClass="active"
                   to="Testimonials"
                   spy={true}
@@ -128,7 +128,7 @@ const Navbar = () => {
                   <p className="text-white n hover:b-gray-700 hover-underline-animation hover:text-white px-3 py-2 rounded-md text-base  cursor-pointer ">
                     Testimonials
                   </p>
-                </Link>
+                </Link> */}
                 <Link
                   activeClass="active"
                   to="Contact"
