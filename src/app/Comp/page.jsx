@@ -12,7 +12,7 @@ import Work from "./Work/page";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     AOS.init({
       once: true,
@@ -36,7 +36,7 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 // components/Particles.js
 

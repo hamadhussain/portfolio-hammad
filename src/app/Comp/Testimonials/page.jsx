@@ -27,7 +27,7 @@
 import React from "react";
 import Embla from "./Embla/page";
 
-const page = () => {
+const Page = () => {
   const OPTIONS = { align: "start", dragFree: true, loop: true };
   // const SLIDES = [
   //   {
@@ -97,4 +97,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

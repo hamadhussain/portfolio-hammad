@@ -181,7 +181,7 @@
 // };
 
 // export default page;
-'use client'
+'use clienP'
 import React from "react";
 import N from "../Nav/page";
 import Image from "next/image";
@@ -191,7 +191,7 @@ import { FaGithub, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Particles from "./Particles/page";
 import NumberAnimation from './NumberAnimation/page'
-const page = () => {
+const Page = () => {
   const handleDownload = () => {
     // Replace 'resume.pdf' with the actual path to your resume file
     const downloadPath = '/HammadHussainnCV.pdf';
@@ -284,4 +284,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

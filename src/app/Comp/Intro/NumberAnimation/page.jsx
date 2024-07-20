@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from 'react'
 
-const page = () => {
+const Page = () => {
     useEffect(() => {
         const countElements = document.querySelectorAll('.count');
     
@@ -55,4 +55,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

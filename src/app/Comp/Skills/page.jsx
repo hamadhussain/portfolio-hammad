@@ -3,7 +3,7 @@ import React from "react";
 import { SiNextdotjs } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 
-const page = () => {
+const Page = () => {
   return (
     <div
       id="Skills"
@@ -218,4 +218,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
