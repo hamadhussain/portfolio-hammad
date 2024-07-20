@@ -27,7 +27,7 @@ const Page = () => {
         <Work />
         <MyE />
         <Skills />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Recent />
         <Contact />
         <Footer />
