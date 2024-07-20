@@ -235,7 +235,7 @@
 
 'use client';
 import React, { useCallback } from 'react';
-import { DotButton, useDotButton } from './DotButton';
+import { DotButton, useDotButton } from './DotButton/page';
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
