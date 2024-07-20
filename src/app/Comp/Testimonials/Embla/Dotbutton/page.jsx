@@ -1,7 +1,7 @@
 'use client'
 import React, { useCallback, useEffect, useState } from 'react'
 
-export const useDotButton = (emblaApi, onButtonClick) => {
+export default function useDotButton(emblaApi, onButtonClick) {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [scrollSnaps, setScrollSnaps] = useState([])
 
@@ -37,7 +37,7 @@ export const useDotButton = (emblaApi, onButtonClick) => {
   }
 }
 
-export const DotButton = (props) => {
+export default function DotButton  (props)  {
   const { children, ...restProps } = props
 
   return (
