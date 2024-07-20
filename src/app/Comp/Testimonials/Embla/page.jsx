@@ -336,7 +336,7 @@
 // export default EmblaCarousel;
 'use client';
 import React, { useCallback } from 'react';
-import DotButton from './DotButton/page';
+import DotButton from './Dotbutton/page';
 import useDotButton from './UseDotButton/page';
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
