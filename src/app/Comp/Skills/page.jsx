@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <div
       id="Skills"
-      className=" h-full md:p-24 p-2 py-14 m flex items-center flex-col justify-center"
+      className=" overflow-hidden h-full md:p-24 p- py-14 m flex items-center flex-col justify-center"
     >
       <h1 className="text-gradientd  t">My Skills</h1>
       <br />

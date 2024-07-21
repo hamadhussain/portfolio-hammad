@@ -281,7 +281,7 @@ const Page = () => {
           </motion.div>
         </div>
       </div> */}
-      <div className="min-h-screen flex flex-col justify-evenly sm:justify-start sm:gap-9">
+      <div className="min-h-screen overflow-hidden flex flex-col justify-evenly sm:justify-start sm:gap-9">
         <N />
         <div className="flex flex-col sm:flex-row items-center justify-center px-5 gap-14 relative ">
           <div className="text-center md:text-left space-y-5">

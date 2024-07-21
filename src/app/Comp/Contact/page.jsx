@@ -142,7 +142,7 @@ const Page = () => {
   return (
     <div
       id="Contact"
-      className="p-4 py-10 md:p-24 bg-black flex flex-col md:flex-row justify-center items-center"
+      className="p-4 py-10 space-y-5 lg:space-y-0 lg:p-24 bg-black flex flex-col lg:flex-row justify-center items-center"
     >
       <div
         data-aos="fade-right"

@@ -11,7 +11,7 @@ const Page = () => {
           project that inspires you and you customers.
         </p>
       </div>
-      <div  className=" flex space-y-5 justify-around md:flex-row flex-col ap-11">
+      <div  className=" flex space-y-5 justify-around lg:flex-row flex-col ap-11">
         {/* <div className="flex justify-center items-center flex-col">
           <div className=" p-10 bg-black border-purple-500">
             <Image

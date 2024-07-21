@@ -22,7 +22,7 @@ const Page = () => {
   return (
     <div>
       <Intro />
-      <div  className="nn" style={{ position: "relative", zIndex: 1 }}>
+      <div  className="nn  overflow-hidden" style={{ position: "relative", zIndex: 1 }}>
         <Services />
         <Work />
         <MyE />

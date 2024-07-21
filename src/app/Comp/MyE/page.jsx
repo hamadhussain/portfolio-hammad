@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div
       id="E"
-      className=" flex space-y-4 items-center  md:space-y-0 md:flex-row flex-col h-full md:justify-center py-24 bg-black"
+      className=" flex space-y-4 items-center  lg:space-y-0 lg:flex-row flex-col h-full lg:justify-center py-24 bg-black"
     >
       <div className=" flex flex-col sm:items-center   px-4 space-y-6"> overflow-hidden
         <h1 className=" flex items-center sm:relative sm:-left-3  text-5xl t text-gradientd">
