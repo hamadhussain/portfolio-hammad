@@ -44,7 +44,7 @@ const Page = () => {
         >
           <div className="p-14 flex i flex-col d rounded-3xl justify-center items-center gap-5 hoverscale-110 duration-500 delay-75">
             <Image
-              src="/typescript.png"
+              src="/ts.png"
               className="imgg filter  hover:scale-110 transition cursor-pointer scale-100 hover:grayscale-0 grayscale"
               width={100}
               height={100}
@@ -138,7 +138,7 @@ const Page = () => {
           </div>
           <span className="text-purple-500">Java</span>
         </div>
-        <div
+        {/* <div
           data-aos-easing="linear"
           data-aos="flip-up"
           data-aos-duration="1000"
@@ -149,8 +149,25 @@ const Page = () => {
             <span className="text-gray-400">92%</span>
           </div>
           <span className="text-purple-500">Prisma</span>
-        </div>
+        </div> */}
         <div
+          data-aos-easing="linear"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+          className="flex  flex-col items-center gap-2"
+        >
+          <div className="p-14 i d flex flex-col rounded-3xl justify-center items-center gap-5 duration-500 delay-75">
+            <Image
+              src="/prisma.png"
+              className="imgg filter transition cursor-pointer scale-100 hover:grayscale-0  hover:scale-110 grayscale"
+              width={100}
+              height={100}
+            />
+            <span className="text-gray-400">92%</span>
+          </div>
+          <span className="text-purple-500">Prisma</span>
+        </div>
+        {/* <div
           data-aos-easing="linear"
           data-aos="flip-up"
           data-aos-duration="1000"
@@ -161,6 +178,23 @@ const Page = () => {
             <span className="text-gray-400">92%</span>
           </div>
           <span className="text-purple-500">Prisma</span>
+        </div> */}
+          <div
+          data-aos-easing="linear"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+          className="flex  flex-col items-center gap-2"
+        >
+          <div className="p-14 i d flex flex-col rounded-3xl justify-center items-center gap-5 duration-500 delay-75">
+            <Image
+              src="/Next_js.png"
+              className="imgg filter transition cursor-pointer scale-100 hover:grayscale-0  hover:scale-110 grayscale"
+              width={100}
+              height={100}
+            />
+            <span className="text-gray-400">92%</span>
+          </div>
+          <span className="text-purple-500">Next.js</span>
         </div>
         <div
           data-aos-easing="linear"
