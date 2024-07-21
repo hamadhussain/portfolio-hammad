@@ -238,11 +238,40 @@ const Page = () => {
           </button>
         </div>
       </div>
-
       <div className="text-white md:ml-8 mt-8 md:mt-0 space-y-10 md:flex md:flex-col md:items-start md:space-y-5">
+        <div className="flex items-start md:items-center md:flex-row">
+          <div className="bg-gradient-to-t from-purple-600 to-purple-950 p-3 flex items-center justify-center rounded-full">
+            <FaPhoneVolume className="text-white text-3xl" />
+          </div>
+          <div className="ml-4">
+            <p className="text-gray-300">Phone</p>
+            <p className="text-xl md:text-2xl">03462351008</p>
+          </div>
+        </div>
+        <div className="flex items-start md:items-center md:flex-row">
+          <div className="bg-gradient-to-t from-purple-600 to-purple-950 p-3 flex items-center justify-center rounded-full">
+            <IoMdMail className="text-white text-3xl" />
+          </div>
+          <div className="ml-4">
+            <p className="text-gray-300">Email</p>
+            <p className="text-xl md:text-2xl">hammad31012004@gmail.com</p>
+          </div>
+        </div>
+        <div className="flex items-start md:items-center md:flex-row">
+          <div className="bg-gradient-to-t from-purple-600 to-purple-950 p-3 flex items-center justify-center rounded-full">
+            <FaLocationDot className="text-white text-3xl" />
+          </div>
+          <div className="ml-4">
+            <p className="text-gray-300">Address</p>
+            <p className="text-xl md:text-2xl">North Karachi 11A</p>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="text-white md:ml-8 mt-8 md:mt-0 space-y-10 md:flex md:flex-col md:items-start md:space-y-5">
         <div className="flex items-center gap-4">
-          <div className="bg-gradient-to-t from-purple-600 to-purple-950 w-14 h-14 flex items-center justify-center rounded-full">
-            <FaPhoneVolume className="text-white" />
+          <div className="bg-gradient-to-t from-purple-600 to-purple-950 p-3 flex items-center justify-center rounded-full">
+            <FaPhoneVolume className="text-white text-3xl " />
           </div>
           <div>
             <p className="text-gray-300">Phone</p>
@@ -250,8 +279,8 @@ const Page = () => {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <div className="bg-gradient-to-t from-purple-600 to-purple-950 w-14 h-14 flex items-center justify-center rounded-full">
-            <IoMdMail className="text-white" />
+          <div className="bg-gradient-to-t from-purple-600 to-purple-950 p-3 flex items-center justify-center rounded-full">
+            <IoMdMail className="text-white text-3xl" />
           </div>
           <div>
             <p className="text-gray-300">Email</p>
@@ -259,15 +288,15 @@ const Page = () => {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <div className="bg-gradient-to-t from-purple-600 to-purple-950 w-14 h-14 flex items-center justify-center rounded-full">
-            <FaLocationDot className="text-white" />
+          <div className="bg-gradient-to-t from-purple-600 to-purple-950 p-3 flex items-center justify-center rounded-full">
+            <FaLocationDot className="text-white text-3xl" />
           </div>
           <div>
             <p className="text-gray-300">Address</p>
             <p className="text-2xl">North Karachi 11A</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

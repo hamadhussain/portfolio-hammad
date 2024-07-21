@@ -3,7 +3,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className=" flex flex-col justify-cente space-y-12 items- p-24 m">
+    <div className=" flex flex-col justify-cente space-y-6 md:space-y-12 items- p-4 md:p-24 m">
       <div className=" text-center">
         <h1 className=" text-gradientd t">Recent Projects</h1>
         <p className=" text-white">

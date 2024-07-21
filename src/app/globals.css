@@ -254,13 +254,19 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(45deg, #d546fc, #c4c7d2);
+  background: linear-gradient(45deg, #a024c2, #c4c7d2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   /* font-size: 500px; */
 }
-
+.text-gradientdd {
+  background: linear-gradient(298deg, #9801f5ab, #7e00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  text-shadow: -5px -3px 0px #480076e0;
+}
 .text-gradientd {
   background: linear-gradient(22deg, #9d00ffab, white);
   -webkit-background-clip: text;

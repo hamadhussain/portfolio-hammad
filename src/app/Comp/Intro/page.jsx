@@ -210,7 +210,7 @@ const Page = () => {
             <p className="text-4xl">
               I am <span className="font-bold">Hammad Hussain</span>
             </p>
-            <p className="text-gradientd text-7xl">
+            <p className="text-gradientdd text-7xl">
               <span className="text-purple-500 font-bold">Web Developer</span> +
               <br />
               <span className="text-purple-500 font-bold">UX Designer</span>
@@ -248,7 +248,7 @@ const Page = () => {
             initial={{ x: 800, overflow: "hidden" }}
             animate={{ x: 0, rotate: 3 }}
             whileHover={{ rotate: 1 }}
-            transition={{ duration: 5.6 }}
+            transition={{ duration: 0.2 }}
             className="overflow-hidden border-4 border-purple-800 border-opacity-40 hover:border-opacity-100 cursor-pointer hover:rotate-1 transition-all hover:ease-linear duration-75 rotate-3 rounded-3xl bg-black w-fit h-fit"
           >
             <Image
