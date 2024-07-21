@@ -301,7 +301,7 @@ const Page = () => {
               <a href="/HammadHussainnCV.pdf" download>
                 <button
                   onClick={handleDownload}
-                  className="transition-all text-xl md:text-2xl duration-150 flex items-center ease-out rounded-full hover:text-white border-2 py-3 md:py-4 px-6 md:px-8 border-purple-500 hover:bg-purple-800 text-purple-500"
+                  className="transition-all text-xl md:text-2xl duration-150 flex items-center ease-out rounded-full bg-transparent hover:text-white border-2 py-3 md:py-4 px-6 md:px-8 border-purple-500 hover:bg-purple-800 text-purple-500"
                 >
                   Download CV{" "}
                   <MdFileDownload className="text-xl md:text-2xl ml-2" />
