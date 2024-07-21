@@ -34,7 +34,7 @@ const Page = () => {
         });
       }, []);
   return (
-    <div className="  grid  grid-cols-2 grid-rows-2 uppercase text-white py-8 px-7 gap-6 ">
+    <div className="  grid grid-rows-1 grid-col-1 sm:grid-cols-2 sm:grid-rows-2 uppercase text-white py-8  px-7 gap-6 ">
         <div className=" space-x-2">
           <strong className=" text-5xl font-extrabold count ">3</strong>
           <span className=" text-2xl "> year of experience in Mern Stack</span>
