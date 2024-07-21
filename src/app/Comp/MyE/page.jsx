@@ -50,7 +50,7 @@ const page = () => {
           <span>Blockdots, London</span>
         </div>
       </div>
-      <div className=" flex flex-col sm:items-center  px-4 space-y-6">r
+      <div className=" flex flex-col sm:items-center  px-4 space-y-6">
         <h1 className=" flex items-center text-5xl  text-gradientd gap-1 t">
           <FaGraduationCap className="text-white " />
           My Education

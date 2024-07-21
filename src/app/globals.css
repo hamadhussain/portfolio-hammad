@@ -235,7 +235,7 @@ body {
   font-size: 50px;
 } */
 .t {
-  font-size: 5vw; /* Default font size */
+  font-size: 7vw; /* Default font size */
 }
 
 @media (max-width: 768px) {
