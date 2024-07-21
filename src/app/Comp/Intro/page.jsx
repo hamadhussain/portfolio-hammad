@@ -179,6 +179,24 @@
 //     </div>
 //   );
 // };
+  {/* <div className="grid grid-cols-2 grid-rows-2 uppercase text-white py-8 px-7 gap-6">
+        <div className="flex items-center space-x-2">
+          <strong className="text-5xl font-extrabold">1</strong>
+          <span className="text-2xl">year of experience in Mern Stack</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <strong className="text-5xl font-extrabold">50+</strong>
+          <span className="text-2xl">Project Completed</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <strong className="text-5xl font-extrabold">1K</strong>
+          <span className="text-2xl">Happy Clients</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <strong className="text-5xl font-extrabold">100%</strong>
+          <span className="text-2xl">of maintainability</span>
+        </div>
+      </div> */}
 
 // export default page;
 'use clienP'
@@ -249,7 +267,7 @@ const Page = () => {
             animate={{ x: 0, rotate: 3 }}
             whileHover={{ rotate: 1 }}
             transition={{ duration: 0.2 }}
-            className="overflow-hidden border-4 border-purple-800 border-opacity-40 hover:border-opacity-100 cursor-pointer hover:rotate-1 transition-all hover:ease-linear duration-75 rotate-3 rounded-3xl bg-black w-fit h-fit"
+            className="sm:block hidden border-4 border-purple-800 border-opacity-40 hover:border-opacity-100 cursor-pointer hover:rotate-1 transition-all hover:ease-linear duration-75 rotate-3 rounded-3xl bg-black w-fit h-fit"
           >
             <Image
               src="/im.png"
@@ -261,24 +279,7 @@ const Page = () => {
           </motion.div>
         </div>
       </div>
-      {/* <div className="grid grid-cols-2 grid-rows-2 uppercase text-white py-8 px-7 gap-6">
-        <div className="flex items-center space-x-2">
-          <strong className="text-5xl font-extrabold">1</strong>
-          <span className="text-2xl">year of experience in Mern Stack</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <strong className="text-5xl font-extrabold">50+</strong>
-          <span className="text-2xl">Project Completed</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <strong className="text-5xl font-extrabold">1K</strong>
-          <span className="text-2xl">Happy Clients</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <strong className="text-5xl font-extrabold">100%</strong>
-          <span className="text-2xl">of maintainability</span>
-        </div>
-      </div> */}
+    
       <NumberAnimation/>
     </div>
   );

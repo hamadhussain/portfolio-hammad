@@ -132,7 +132,7 @@ function ScrollSection() {
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="scroll-section w-full flex flex-col md:flex-row justify-center items-center md:items-center space-y-14 md:space-y-0">
-            <Image src="/suit.png" width={400} height={100} />
+            <Image src="/hh.png" width={400} height={100} />
 
             <div className="text-center md:text-left space-y-4 md:space-y-14">
               <div className="flex text-gradientd justify-center items-center gap-2 md:gap-6 text-4xl md:text-9xl">
