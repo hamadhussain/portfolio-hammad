@@ -129,33 +129,53 @@ const Page = () => {
         <p className="text-white container px-5 text-sm md:text-base">
           We transform your ideas into a unique web project that inspires both
           you and your customers. Specializing in creating seamless user
-          experiences through meticulous web development and UX design,
-          tailored to enhance user engagement and satisfaction.
+          experiences through meticulous web development and UX design, tailored
+          to enhance user engagement and satisfaction.
         </p>
       </div>
       <div className="container mx-auto grid gap-4  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        <div className="text-white bg-gradient-to-r hover:scale-105 hover:cursor-pointer from-violet-400 to-violet-900 px-6 py-12 rounded-lg shadow-md hover:bg-violet-600 transition duration-300">
+        <div
+          data-aos="zoom-out-right"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="text-white bg-gradient-to-r hover:scale-105 hover:cursor-pointer from-violet-400 to-violet-900 px-6 py-12 rounded-lg shadow-md hover:bg-violet-600 transition duration-300"
+        >
           <h1 className="text-2xl font-extrabold">Web Design</h1>
           <p className="mt-4">
             I solve complex user experience problems with integrity-focused
             solutions that connect billions of people.
           </p>
         </div>
-        <div className="text-white hover:scale-105 hover:cursor-pointer bg-gradient-to-r from-violet-400 to-violet-900 px-6 py-12 rounded-lg shadow-md hover:bg-violet-600 transition duration-300">
+        <div
+          data-aos="zoom-out-right"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="text-white hover:scale-105 hover:cursor-pointer bg-gradient-to-r from-violet-400 to-violet-900 px-6 py-12 rounded-lg shadow-md hover:bg-violet-600 transition duration-300"
+        >
           <h1 className="text-2xl font-extrabold">Web Developer</h1>
           <p className="mt-4">
             I solve complex user experience problems with integrity-focused
             solutions that connect billions of people.
           </p>
         </div>
-        <div className="hover:scale-105 hover:cursor-pointer text-white bg-gradient-to-r from-violet-400 to-violet-900 px-6 py-12 rounded-lg shadow-md hover:bg-violet-600 transition duration-300">
+        <div
+          data-aos="zoom-out-left"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="hover:scale-105 hover:cursor-pointer text-white bg-gradient-to-r from-violet-400 to-violet-900 px-6 py-12 rounded-lg shadow-md hover:bg-violet-600 transition duration-300"
+        >
           <h1 className="text-2xl font-extrabold">Logo Design</h1>
           <p className="mt-4">
             I solve complex user experience problems with integrity-focused
             solutions that connect billions of people.
           </p>
         </div>
-        <div className=" hover:scale-105 hover:cursor-pointer text-white bg-gradient-to-r from-violet-400 to-violet-900 px-6 py-12 rounded-lg shadow-md hover:bg-violet-600 transition duration-300">
+        <div
+          data-aos="zoom-out-left"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className=" hover:scale-105 hover:cursor-pointer text-white bg-gradient-to-r from-violet-400 to-violet-900 px-6 py-12 rounded-lg shadow-md hover:bg-violet-600 transition duration-300"
+        >
           <h1 className="text-2xl font-extrabold">Software Design</h1>
           <p className="mt-4">
             I solve complex user experience problems with integrity-focused
