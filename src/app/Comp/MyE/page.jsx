@@ -13,7 +13,7 @@ const page = () => {
           <PiMedalThin className="text-white" />
           My Experience
         </h1>{/* <div className="relative overflow-hidden"> */}
-        <div className=" text-white   bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
+        <div className=" text-white r  bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
           <span className=" act">2022 - Present</span>
           <br />
           <br />
@@ -22,7 +22,7 @@ const page = () => {
           <br />
           <span>karachi , Pakistan</span>
         </div>
-      <div className=" text-white   bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
+      <div className=" text-white  r bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
           <span className=" act">2022 - Present</span>
           <br />
           <br />
@@ -31,7 +31,7 @@ const page = () => {
           <br />
           <span>karachi , Pakistan</span>
         </div>{" "}
-        <div className=" text-white   bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
+        <div className=" text-white  r bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
           <span className=" act">2022 - Present</span>
           <br />
           <br />
@@ -40,7 +40,7 @@ const page = () => {
           <br />
           <span>Blockdots, London</span>
         </div>
-        <div className=" text-white   bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
+        <div className=" text-white  r bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
           <span className=" act">2022 - Present</span>
           <br />
           <br />
@@ -50,7 +50,7 @@ const page = () => {
           <span>Blockdots, London</span>
         </div>
       </div>
-      <div className=" flex flex-col sm:items-center  px-4 space-y-6">
+      <div className=" flex flex-col sm:items-center  px-4 space-y-6">r
         <h1 className=" flex items-center text-5xl  text-gradientd gap-1 t">
           <FaGraduationCap className="text-white " />
           My Education
@@ -62,7 +62,7 @@ const page = () => {
           dignissimos?
         </div> */}
         {/* <div className="relative overflow-hidden"> */}
-        <div className=" text-white    bg-purple-700   transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
+        <div className=" text-white r   bg-purple-700   transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
           <span className=" act">2022 - Present</span>
           <br />
           <br />
@@ -73,7 +73,7 @@ const page = () => {
           <br />
           <span>karachi , Pakistan</span>
         </div>
-        <div className=" text-white   bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
+        <div className=" text-white r  bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
           <span className=" act">2020 - 2022</span>
           <br />
           <br />
@@ -82,7 +82,7 @@ const page = () => {
           <br />
           <span>karachi , Pakistan</span>
         </div>{" "}
-        <div className=" text-white   bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
+        <div className=" text-white  r bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
           <span className=" capitalize act">earlier - 2020</span>
           <br />
           <br />
@@ -91,7 +91,7 @@ const page = () => {
           <br />
           <span>karachi , Pakistan</span>
         </div>
-        <div className=" text-white   bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
+        <div className=" text-white  r bg-purple-700 transition bg-opacity-40 hover:bg-opacity-100 ease-in-out delay-75 rounded-lg p-4 duration-700 w-[350px] sm:w-[400px] md:w-[500px] hover:bg-gradient-to-r from-purple-900  hover:text-white  ">
           <span className=" act">2023 - Present</span>
           <br />
           <br />

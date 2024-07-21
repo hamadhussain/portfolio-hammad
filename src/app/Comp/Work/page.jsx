@@ -135,8 +135,8 @@ function ScrollSection() {
             <Image src="/suit.png" width={400} height={100} />
 
             <div className="text-center md:text-left space-y-4 md:space-y-14">
-              <div className="flex justify-center items-center gap-2 md:gap-6 text-4xl md:text-9xl">
-                <h1>My Work</h1>{" "}
+              <div className="flex text-gradientd justify-center items-center gap-2 md:gap-6 text-4xl md:text-9xl">
+                <h1 >My Work</h1>{" "}
                 <IoArrowUpCircleSharp className="text-4xl md:text-7xl animate-ping rotate-180 text-end" />
               </div>
             </div>
@@ -147,7 +147,7 @@ function ScrollSection() {
               src="/examlight.png"
               width={500}
               height={100}
-              className="-rotate-3 md:rotate-3"
+              className="-rotate-3 md:-rotate-3"
             />
             <Image
               src="/examdark.png"

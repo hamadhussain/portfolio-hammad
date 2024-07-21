@@ -142,7 +142,7 @@ const Page = () => {
   return (
     <div
       id="Contact"
-      className="p-4 py-10 md:p-24 bg-black flex flex-col md:flex-row justify-evenly items-center"
+      className="p-4 py-10 md:p-24 bg-black flex flex-col md:flex-row justify-center items-center"
     >
       <div
         data-aos="fade-right"
@@ -241,7 +241,7 @@ const Page = () => {
       <div className="text-white md:ml-8 mt-8 md:mt-0 space-y-10 md:flex md:flex-col md:items-start md:space-y-5">
         <div className="flex items-start md:items-center md:flex-row">
           <div className="bg-gradient-to-t from-purple-600 to-purple-950 p-3 flex items-center justify-center rounded-full">
-            <FaPhoneVolume className="text-white text-3xl" />
+            <FaPhoneVolume className="text-white text-xl md:text-3xl" />
           </div>
           <div className="ml-4">
             <p className="text-gray-300">Phone</p>
@@ -250,7 +250,7 @@ const Page = () => {
         </div>
         <div className="flex items-start md:items-center md:flex-row">
           <div className="bg-gradient-to-t from-purple-600 to-purple-950 p-3 flex items-center justify-center rounded-full">
-            <IoMdMail className="text-white text-3xl" />
+            <IoMdMail className="text-white text-xl md:text-3xl" />
           </div>
           <div className="ml-4">
             <p className="text-gray-300">Email</p>
@@ -259,7 +259,7 @@ const Page = () => {
         </div>
         <div className="flex items-start md:items-center md:flex-row">
           <div className="bg-gradient-to-t from-purple-600 to-purple-950 p-3 flex items-center justify-center rounded-full">
-            <FaLocationDot className="text-white text-3xl" />
+            <FaLocationDot className="text-white text-xl md:text-3xl" />
           </div>
           <div className="ml-4">
             <p className="text-gray-300">Address</p>

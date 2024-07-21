@@ -7,9 +7,9 @@ const Page = () => {
   return (
     <div
       id="Skills"
-      className=" h-full md:p-24 p-2 m flex items-center flex-col justify-center"
+      className=" h-full md:p-24 p-2 py-14 m flex items-center flex-col justify-center"
     >
-      <h1 className="text-gradientd t">My Skills</h1>
+      <h1 className="text-gradientd text-6xl sm:text-8xl">My Skills</h1>
       <br />
       <p className=" text-white container text-center">
         We put your ideas and thus your wishes in the form of a unique web
@@ -18,7 +18,7 @@ const Page = () => {
         expertise in programming languages like Python, JavaScript, and PHP, we
         ensure your project not only meets but exceeds technical expectations.
       </p>
-      <div className="py-24 grid grid-flow-row-dense  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="py-10 grid grid-flow-row-dense  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div
           data-aos-easing="linear"
           data-aos="flip-up"

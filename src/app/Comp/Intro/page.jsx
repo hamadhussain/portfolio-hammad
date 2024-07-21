@@ -205,7 +205,7 @@ const Page = () => {
       <Particles />
       <div className="h-screen flex flex-col justify-evenly">
         <N />
-        <div className="flex h-full flex-col md:flex-row items-center justify-center gap-14 relative ">
+        <div className="flex h-full flex-col sm:flex-row items-center justify-center px-5 gap-14 relative ">
           <div className="text-center md:text-left space-y-5">
             <p className="text-4xl">
               I am <span className="font-bold">Hammad Hussain</span>

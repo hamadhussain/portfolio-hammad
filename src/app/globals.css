@@ -207,14 +207,15 @@ body {
   transition: 0.5s;
   transform-style: preserve-3d;
   overflow: hidden;
-  margin-right: 15px;
-  margin-top: 45px;
+  /* margin-right: 15px;
+  margin-top: 45px; */
 }
 .r {
-  transform: rotateY(25deg);
+  /* transform: rotateY(25deg); */
 }
 .r:hover ~ .r {
   transform: rotateY(-25deg);
+  width:max-content;
 }
 .r:hover {
   transform: rotateY(0deg) scale(1.25);
@@ -271,7 +272,8 @@ body {
   background: linear-gradient(22deg, #9d00ffab, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bolder;
+  font-weight: bolder;  text-transform: uppercase;
+
 }
 
 ::-webkit-scrollbar {
