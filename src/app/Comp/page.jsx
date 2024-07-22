@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect ,useState} from "react";
 import Intro from "./Intro/page";
 import Services from "./Services/page";
 import MyE from "./MyE/page";
@@ -11,17 +11,26 @@ import Recent from "./Recent/page";
 import Work from "./Work/page";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Loading from './Loading/page'
 
 const Page = () => {
+  const [loading, setLoading] = useState(true)
+
   useEffect(() => {
+
     AOS.init({
       once: true,
     });
     AOS.refresh();
+    setTimeout(() => setLoading(false), 3300)
+
   }, []);
+
+
+  
   return (
     <div>
-      <Intro />
+    { loading?(<Loading/>): (<><Intro />
       <div  className="nn  overflow-hidden" style={{ position: "relative", zIndex: 1 }}>
         <Services />
         <Work />
@@ -30,7 +39,7 @@ const Page = () => {
         <Recent />
         <Contact />
         <Footer />
-      </div>
+      </div></>)}
     </div>
   );
 };
