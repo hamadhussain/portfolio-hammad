@@ -292,7 +292,7 @@ align-items: center;
     -225deg,
     #231557 0%,
     #44107a 29%,
-    #2b13ff 67%,
+    #13ffd8 67%,
     #c800ff 100%
   );
   background-size: auto auto;
@@ -303,9 +303,9 @@ align-items: center;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 5s ease-in-out infinite;
   display: inline-block;
-      font-size: 190px;
+      /* font-size: 290px; */
 }
 
 @keyframes textclip {
@@ -321,7 +321,7 @@ align-items: center;
 }
 
 .load {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   text-align: center;
   padding: 20px;
   border-radius: 5px;
