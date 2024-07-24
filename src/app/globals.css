@@ -304,8 +304,9 @@ align-items: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 5s ease-in-out infinite;
-  display: inline-block;
-      /* font-size: 290px; */
+  /* display: inline-block; */
+      font-size: 20px;
+      letter-spacing: 23px;
 }
 
 @keyframes textclip {

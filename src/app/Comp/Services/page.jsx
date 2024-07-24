@@ -138,9 +138,9 @@ const Page = () => {
           data-aos="zoom-out-right"
           data-aos-easing="linear"
           data-aos-duration="1500"
-          className="text-white bg-gradient-to-r hover:scale-105 hover:cursor-pointer from-violet-400 to-violet-900 px-6 py-12 rounded-lg shadow-md hover:bg-violet-600 transition duration-300"
+          className="text-white bg-gradient-to-r  hover: from-violet-400 to-violet-900 px-6 py-12 rounded-lg shadow-md hover:bg-violet-600 transition duration-300 "
         >
-          <h1 className="text-2xl font-extrabold">Web Design</h1>
+          <h1 className="text-2xl  font-extrabold">Web Design</h1>
           <p className="mt-4">
             I solve complex user experience problems with integrity-focused
             solutions that connect billions of people.
