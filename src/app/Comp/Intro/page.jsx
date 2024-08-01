@@ -298,7 +298,7 @@ const Page = () => {
               integrity-focused solutions that connect billions of people
             </p>
             <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-5 mt-4">
-              <a href="/HammadHussainnCV.pdf" download>
+              {/* <a href="/HammadHussainnCV.pdf" download>
                 <button
                   onClick={handleDownload}
                   className="transition-all text-xl md:text-2xl duration-150 flex items-center ease-out rounded-full bg-transparent hover:text-white border-2 py-3 md:py-4 px-6 md:px-8 border-purple-500 hover:bg-purple-800 text-purple-500"
@@ -306,7 +306,9 @@ const Page = () => {
                   Download CV{" "}
                   <MdFileDownload className="text-xl md:text-2xl ml-2" />
                 </button>
-              </a>
+              </a> */}
+              <a                   className="transition-all text-xl md:text-2xl duration-150 flex items-center ease-out rounded-full bg-transparent hover:text-white border-2 py-3 md:py-4 px-6 md:px-8 border-purple-500 hover:bg-purple-800 text-purple-500"
+ href="/HammadHussainCV.pdf" target="_blank">Download CV</a>
               <div className="flex space-x-5 mt-4 md:mt-0">
                 <a
                   href="https://www.facebook.com/share/RaSTBRZv9xUsjJCe/?mibextid=qi2Omg"
