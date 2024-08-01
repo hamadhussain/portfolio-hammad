@@ -308,7 +308,7 @@ const Page = () => {
                 </button>
               </a> */}
               <a                   className="transition-all text-xl md:text-2xl duration-150 flex items-center ease-out rounded-full bg-transparent hover:text-white border-2 py-3 md:py-4 px-6 md:px-8 border-purple-500 hover:bg-purple-800 text-purple-500"
- href="/HammadHussainCV.pdf" target="_blank">Download CV</a>
+ href="/HHCV.pdf" target="_blank">Download CV</a>
               <div className="flex space-x-5 mt-4 md:mt-0">
                 <a
                   href="https://www.facebook.com/share/RaSTBRZv9xUsjJCe/?mibextid=qi2Omg"
