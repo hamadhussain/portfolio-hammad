@@ -211,6 +211,8 @@ import { FaGithub, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Particles from "./Particles/page";
 import NumberAnimation from "./NumberAnimation/page";
+import Three from './Model/page'
+
 const Page = () => {
   const handleDownload = () => {
     // Replace 'resume.pdf' with the actual path to your resume file
@@ -307,8 +309,13 @@ const Page = () => {
                   <MdFileDownload className="text-xl md:text-2xl ml-2" />
                 </button>
               </a> */}
-              <a                   className="transition-all text-xl md:text-2xl duration-150 flex items-center ease-out rounded-full bg-transparent hover:text-white border-2 py-3 md:py-4 px-6 md:px-8 border-purple-500 hover:bg-purple-800 text-purple-500"
- href="/HHCV.pdf" target="_blank">Download CV</a>
+              <a
+                className="transition-all text-xl md:text-2xl duration-150 flex items-center ease-out rounded-full bg-transparent hover:text-white border-2 py-3 md:py-4 px-6 md:px-8 border-purple-500 hover:bg-purple-800 text-purple-500"
+                href="/HHCV.pdf"
+                target="_blank"
+              >
+                Download CV
+              </a>
               <div className="flex space-x-5 mt-4 md:mt-0">
                 <a
                   href="https://www.facebook.com/share/RaSTBRZv9xUsjJCe/?mibextid=qi2Omg"
@@ -342,16 +349,22 @@ const Page = () => {
             animate={{ x: 0, rotate: 3 }}
             whileHover={{ rotate: 1 }}
             transition={{ duration: 0.2 }}
-            className="sm:block hidden border-4 border-purple-800 border-opacity-40 hover:border-opacity-100 cursor-pointer hover:rotate-1 transition-all hover:ease-linear duration-75 rotate-3 rounded-3xl bg-black w-fit h-fit"
+            className="sm:block hidden bordr-4 border-purple-00 border-opacity-40 hover:border-opacity-100 cursor-pointer hover:rotate-1 transition-all hover:ease-linear duration-75 rotate-3 rounded-3xl bg-blck w-96 h-96"
           >
-            <Image
+            {/* <Image
               src="/im.png"
               alt="image"
               // className="w-full h-auto md:w-auto md:h-auto"
               className="w-full img wid"
               width={250}
               height={100}
-            />
+            /> */}
+          {/* //   <div  */}
+          {/* //    className="sm:block hidden border-4 border-purple-80 border-opacity-40 hover:border-opacity-100 cursor-pointer hover:rotate-1 transition-all hover:ease-linear duration-75 rotate-3 rounded-3xl bg-blak w-fit h-fit"
+          // > */}
+            <Three/>
+
+            {/* </div> */}
           </motion.div>
         </div>
       </div>
