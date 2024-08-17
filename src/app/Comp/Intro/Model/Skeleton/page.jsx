@@ -91,11 +91,14 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
   
   const modelRef = useRef();
+  useEffect(() => {
+
   useFrame(() => {
     if (modelRef.current) {
       modelRef.current.rotation.y += 0.007;
     }
   });
+}, []);
 
   return (
     <group {...props} dispose={null} ref={modelRef}>
