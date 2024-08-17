@@ -135,9 +135,9 @@ const Model = () => {
   // }, []);
 
   useFrame(() => {
-    if (modelRef.current) {
+    // if (modelRef.current) {
       modelRef.current.rotation.y += 0.007;
-    }
+    // }
   });
 
   return (
@@ -163,3 +163,4 @@ const Model = () => {
 }
 
 export default Model
+useGLTF.preload("/skull_salazar_downloadable.glb");
