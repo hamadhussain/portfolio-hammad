@@ -40,28 +40,22 @@
 // }
 // useGLTF.preload("/skull_salazar_downloadable.glb");
 
-
-
-
-
-
-
-
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
-  const modelRef = useRef();
-
-  useFrame(() => {
-    if (modelRef.current) {
-      modelRef.current.rotation.y += 0.007;
-    }
-  });
+  useEffect(() => {
+    const modelRef = useRef();
+    useFrame(() => {
+      if (modelRef.current) {
+        modelRef.current.rotation.y += 0.007;
+      }
+    });
+  }, []);
 
   return (
     <group {...props} dispose={null} ref={modelRef}>
