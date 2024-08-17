@@ -1,37 +1,9 @@
-// // import { CircleLoader } from "react-awesome-loaders";
-// import React from 'react'
+import Image from "next/image"
 
-// const page = () => {
-//   return (
-//     <>
-//     {/* <CircleLoader
-//       meshColor={"#6366F1"}
-//       lightColor={"#E0E7FF"}
-//       duration={1.5}
-//       desktopSize={"90px"}
-//       mobileSize={"64px"}
-//     /> */}
-// <div className=' load'>    loading...
-// </div>
-//   </>
-//   )
-// }
-
-// export default page
-
-
-
-
-
-
-import React from 'react';
-
-const Page = () => {
-  return (
-    <div className='page d'>
-      <div className='load animate-charcter text-7xl leading-4 uppercase'>Loading</div>
+export default function Loading() {
+    return <>
+    <div className="h-screen d flex justify-center items-center">
+      <Image src="/loader.gif" width={200} height={100}/>
     </div>
-  );
-};
-
-export default Page;
+    </>
+  }

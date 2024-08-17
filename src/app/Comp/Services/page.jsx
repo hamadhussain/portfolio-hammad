@@ -527,7 +527,7 @@ const Page = () => {
 
   return (
     <div id="Services" className="bg-fixed about text-white bg-black">
-      <div className="grid-container p-5 md:p-10 gap-4 sm:gap-10">
+      <div className="grid-container py-14 p-5 md:p-10 gap-4 sm:gap-10">
         <div
           data-aos="zoom-in-up"
           className="item1 rounded-lg pro backdrop-blur-3xl "

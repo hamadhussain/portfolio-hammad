@@ -1,9 +1,13 @@
-import Image from "next/image"
+import React from "react";
 
-export default function Loading() {
-    return <>
-    <div className="h-screen d flex justify-center items-center">
-      <Image src="/loader.gif" width={200} height={100}/>
+const Page = () => {
+  return (
+    <div className="page d">
+      <div className="load animate-charcter text-7xl leading-4 uppercase">
+        Loading
+      </div>
     </div>
-    </>
-  }
+  );
+};
+
+export default Page;
