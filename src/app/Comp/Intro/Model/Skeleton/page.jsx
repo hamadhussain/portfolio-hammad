@@ -119,4 +119,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("/skull_salazar_downloadable.glb");
+// useGLTF.preload("/skull_salazar_downloadable.glb");
