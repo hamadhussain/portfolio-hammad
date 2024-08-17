@@ -125,17 +125,20 @@ import { useFrame } from "@react-three/fiber";
 // useGLTF.preload("/skull_salazar_downloadable.glb");
 
 const Model = () => {
-  const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
+  // const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
+  
+  const modelPath = "/skull_salazar_downloadable.glb"; // Ensure this path is correct
+  const { nodes, materials } = useGLTF(modelPath);
   
   const modelRef = useRef();
   // useEffect(() => {
+  // }, []);
 
   useFrame(() => {
     if (modelRef.current) {
       modelRef.current.rotation.y += 0.007;
     }
   });
-// }, []);
 
   return (
     <group   ref={modelRef}>
