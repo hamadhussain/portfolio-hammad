@@ -140,12 +140,12 @@ const Model = React.memo(function Model() {
   // }, []);
 
   useFrame(() => {
-    modelRef.current.rotation.y += 0.007;
+    modelRef.current.rotation.y += 0.003;
   });
 
   return (
     <group dispose={null} ref={modelRef}>
-      <group rotation={[-Math.PI / 2, 0.019, 0]} scale={[3, 3, 3]}>
+      <group rotation={[-Math.PI / 2, 0.019, 0]} scale={[2.5, 2.5, 2.5]}>
         <group rotation={[2.2, 0, 0]}>
           <mesh
             castShadow

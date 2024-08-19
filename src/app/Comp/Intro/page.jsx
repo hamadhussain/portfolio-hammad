@@ -211,7 +211,7 @@ import { FaGithub, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Particles from "./Particles/page";
 import NumberAnimation from "./NumberAnimation/page";
-// import Three from './Model/page'
+import Three from './Model/page'
 
 const Page = () => {
   return (
@@ -338,10 +338,10 @@ const Page = () => {
           </div>
           <motion.div
             initial={{ x: 800, overflow: "hidden" }}
-            animate={{ x: 0, rotate: 3 }}
-            whileHover={{ rotate: 1 }}
+            animate={{ x: 0 }}
+            // whileHover={{ rotate: 1 }}
             transition={{ duration: 0.2 }}
-            className="sm:block hidden bordr-4 border-purple-00 border-opacity-40 hover:border-opacity-100 cursor-pointer hover:rotate-1 transition-all hover:ease-linear duration-75 rotate-3 rounded-3xl bg-blck w-96 h-96"
+            className="sm:block hidden brder-4 border-purple-00 border-opacity-40 hover:border-opacity-100 cursor-pointer  transition-all hover:ease-linear duration-75  rounded-3xl bg-blck w-96 h-96"
           >
             {/* <Image
               src="/im.png"
@@ -354,7 +354,7 @@ const Page = () => {
           {/* //   <div  */}
           {/* //    className="sm:block hidden border-4 border-purple-80 border-opacity-40 hover:border-opacity-100 cursor-pointer hover:rotate-1 transition-all hover:ease-linear duration-75 rotate-3 rounded-3xl bg-blak w-fit h-fit"
           // > */}
-            {/* <Three/> */}
+            <Three/>
 
             {/* </div> */}
           </motion.div>
