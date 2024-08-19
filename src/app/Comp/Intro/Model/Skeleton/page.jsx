@@ -1,25 +1,65 @@
+// // // "use client";
+
+// // // import React, { useRef } from "react";
+// // // import { useGLTF } from "@react-three/drei";
+// // // import { useFrame } from "@react-three/fiber";
+
+// // // export default function Model(props) {
+// // //   const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
+// // //   const modelRef = useRef(); // Initialize useRef correctly
+
+// // //   // Rotate the model on every frame
+// // //   useFrame(() => {
+// // //     modelRef.current.rotation.y += 0.007;
+// // //   });
+
+// // //   return (
+// // //     <group {...props} dispose={null} ref={modelRef}>
+// // //       <group
+// // //         rotation={[-Math.PI / 2, 0.019, 0]}
+// // //         scale={[3, 3, 3]}
+// // //         // rotation={[0.4, -1, 0]}
+// // //       >
+// // //         <group rotation={[2.2, 0, 0]}>
+// // //           <mesh
+// // //             castShadow
+// // //             receiveShadow
+// // //             geometry={nodes.defaultMaterial.geometry}
+// // //             material={materials.Rosa_material}
+// // //           />
+// // //           <mesh
+// // //             castShadow
+// // //             receiveShadow
+// // //             geometry={nodes.defaultMaterial_1.geometry}
+// // //             material={materials.defaultMat_material}
+// // //           />
+// // //         </group>
+// // //       </group>
+// // //     </group>
+// // //   );
+// // // }
+// // // useGLTF.preload("/skull_salazar_downloadable.glb");
+
 // // "use client";
 
-// // import React, { useRef } from "react";
+// // import React, { useEffect, useRef } from "react";
 // // import { useGLTF } from "@react-three/drei";
 // // import { useFrame } from "@react-three/fiber";
 
 // // export default function Model(props) {
 // //   const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
-// //   const modelRef = useRef(); // Initialize useRef correctly
-
-// //   // Rotate the model on every frame
-// //   useFrame(() => {
-// //     modelRef.current.rotation.y += 0.007;
-// //   });
+// //   useEffect(() => {
+// //     const modelRef = useRef();
+// //     useFrame(() => {
+// //       if (modelRef.current) {
+// //         modelRef.current.rotation.y += 0.007;
+// //       }
+// //     });
+// //   }, []);
 
 // //   return (
 // //     <group {...props} dispose={null} ref={modelRef}>
-// //       <group
-// //         rotation={[-Math.PI / 2, 0.019, 0]}
-// //         scale={[3, 3, 3]}
-// //         // rotation={[0.4, -1, 0]}
-// //       >
+// //       <group rotation={[-Math.PI / 2, 0.019, 0]} scale={[3, 3, 3]}>
 // //         <group rotation={[2.2, 0, 0]}>
 // //           <mesh
 // //             castShadow
@@ -38,71 +78,74 @@
 // //     </group>
 // //   );
 // // }
+
 // // useGLTF.preload("/skull_salazar_downloadable.glb");
 
 // "use client";
 
-// import React, { useEffect, useRef } from "react";
+// import React, { useRef, useState, useEffect } from "react";
 // import { useGLTF } from "@react-three/drei";
 // import { useFrame } from "@react-three/fiber";
 
-// export default function Model(props) {
-//   const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
-//   useEffect(() => {
-//     const modelRef = useRef();
-//     useFrame(() => {
-//       if (modelRef.current) {
-//         modelRef.current.rotation.y += 0.007;
-//       }
-//     });
-//   }, []);
+// // export default function Model() {
+// //   const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
 
-//   return (
-//     <group {...props} dispose={null} ref={modelRef}>
-//       <group rotation={[-Math.PI / 2, 0.019, 0]} scale={[3, 3, 3]}>
-//         <group rotation={[2.2, 0, 0]}>
-//           <mesh
-//             castShadow
-//             receiveShadow
-//             geometry={nodes.defaultMaterial.geometry}
-//             material={materials.Rosa_material}
-//           />
-//           <mesh
-//             castShadow
-//             receiveShadow
-//             geometry={nodes.defaultMaterial_1.geometry}
-//             material={materials.defaultMat_material}
-//           />
-//         </group>
-//       </group>
-//     </group>
-//   );
-// }
+// //   const modelRef = useRef();
+// //   // useEffect(() => {
 
-// useGLTF.preload("/skull_salazar_downloadable.glb");
+// //   useFrame(() => {
+// //     if (modelRef.current) {
+// //       modelRef.current.rotation.y += 0.007;
+// //     }
+// //   });
+// // // }, []);
 
-"use client";
+// //   return (
+// //     <group   ref={modelRef}>
+// //       <group rotation={[-Math.PI / 2, 0.019, 0]} scale={[3, 3, 3]}>
+// //         <group rotation={[2.2, 0, 0]}>
+// //           <mesh
+// //             castShadow
+// //             receiveShadow
+// //             geometry={nodes.defaultMaterial.geometry}
+// //             material={materials.Rosa_material}
+// //           />
+// //           <mesh
+// //             castShadow
+// //             receiveShadow
+// //             geometry={nodes.defaultMaterial_1.geometry}
+// //             material={materials.defaultMat_material}
+// //           />
+// //         </group>
+// //       </group>
+// //     </group>
+// //   );
+// // }
 
-import React, { useRef, useState, useEffect } from "react";
-import { useGLTF } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
+// // useGLTF.preload("/skull_salazar_downloadable.glb");
 
-// export default function Model() {
-//   const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
+// const Model = React.memo(function Model() {
+//   // const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
+
+//   // const [modelPath, setModelPath] = useState(null);
+
+//   // useEffect(() => {
+//   //   setModelPath("/models/skull_salazar_downloadable.glb"); // Ensure this path is correct
+//   // }, []);
+
+//   const { nodes, materials } = useGLTF("/models/skull_salazar_downloadable.glb");
 
 //   const modelRef = useRef();
 //   // useEffect(() => {
+//   // }, []);
 
 //   useFrame(() => {
-//     if (modelRef.current) {
-//       modelRef.current.rotation.y += 0.007;
-//     }
+//     modelRef.current.rotation.y += 0.003;
 //   });
-// // }, []);
 
 //   return (
-//     <group   ref={modelRef}>
-//       <group rotation={[-Math.PI / 2, 0.019, 0]} scale={[3, 3, 3]}>
+//     <group dispose={null} ref={modelRef}>
+//       <group rotation={[-Math.PI / 2, 0.019, 0]} scale={[2.5, 2.5, 2.5]}>
 //         <group rotation={[2.2, 0, 0]}>
 //           <mesh
 //             castShadow
@@ -120,50 +163,229 @@ import { useFrame } from "@react-three/fiber";
 //       </group>
 //     </group>
 //   );
-// }
+// });
 
-// useGLTF.preload("/skull_salazar_downloadable.glb");
+// export default Model;
+// useGLTF.preload("/models/skull_salazar_downloadable.glb");
 
-const Model = React.memo(function Model() {
-  // const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
 
-  // const [modelPath, setModelPath] = useState(null);
 
-  // useEffect(() => {
-  //   setModelPath("/models/skull_salazar_downloadable.glb"); // Ensure this path is correct
-  // }, []);
 
-  const { nodes, materials } = useGLTF("/models/skull_salazar_downloadable.glb");
+
+
+
+
+
+
+
+"use client";
+import React, { useRef } from "react";
+import { useGLTF } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
+
+const Wizard = React.memo(function Wizard(props) {
+  // Use React.memo for performance optimization
+  const { nodes, materials } = useGLTF("/models/wizard-transformed.glb");
 
   const modelRef = useRef();
-  // useEffect(() => {
-  // }, []);
 
-  useFrame(() => {
-    modelRef.current.rotation.y += 0.003;
+  useFrame((state) => {
+    modelRef.current.position.y =
+      -1.5 + Math.sin(state.clock.elapsedTime) * 0.15;
   });
 
   return (
-    <group dispose={null} ref={modelRef}>
-      <group rotation={[-Math.PI / 2, 0.019, 0]} scale={[2.5, 2.5, 2.5]}>
-        <group rotation={[2.2, 0, 0]}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.defaultMaterial.geometry}
-            material={materials.Rosa_material}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.defaultMaterial_1.geometry}
-            material={materials.defaultMat_material}
-          />
-        </group>
-      </group>
+    <group
+      {...props}
+      dispose={null}
+      ref={modelRef}
+      position={[0, -1.5, 0]}
+      scale={[.07, .07, .07]}
+      rotation={[0.25, 0, 0]}
+    >
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Evil_Hathattty_mesh_Evil_HatBLN_Hat_0.geometry}
+        material={materials.Evil_HatBLN_Hat}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.WandpCylinder1_Wandq_0.geometry}
+        material={materials.PaletteMaterial001}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.R_shoe_tongue_mesh_BLN_Shoe_tongue_0.geometry}
+        material={materials.BLN_Shoe_tongue}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Chest_piece_mesh_BLN_chest_piece_0.geometry}
+        material={materials.BLN_chest_piece}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Right_Eyeball_Mesh_Lam_eyeball_0.geometry}
+        material={materials.material_0}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.pants_mesh_BLN_Pants_0.geometry}
+        material={materials.BLN_Pants}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.lower_coat_mesh_FK_BLN_Lower_coat_0.geometry}
+        material={materials.BLN_Lower_coat}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.R_shoe_mesh_BLN_shoes_0.geometry}
+        material={materials.BLN_shoes}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Upper_coat_mesh_BLN_upper_coat_0.geometry}
+        material={materials.BLN_upper_coat}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.upper_body_mesh_BLN_shirt_0.geometry}
+        material={materials.BLN_shirt}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.upper_body_mesh_BLN_Shirt_collar_0.geometry}
+        material={materials.BLN_Shirt_collar}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Coat_collar_mesh_BLN_collar_piece_0.geometry}
+        material={materials.BLN_collar_piece}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.BookpolySurface5_Bookblinn1_0.geometry}
+        material={materials.Bookblinn1}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.BookBook_corner_mesh4_Booklam_book_corners_0.geometry}
+        material={materials.Booklam_book_corners}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.BookpolySurface20_BookBLN_Metal_parts_0.geometry}
+        material={materials.BookBLN_Metal_parts}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.BookFront_glow_mesh_Booklambert8_0.geometry}
+        material={materials.PaletteMaterial002}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.BookpolySurface2_BookBLN_Book_covers_0.geometry}
+        material={materials.BookBLN_Book_covers}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.BookpCube10_Booklam_front_bits_0.geometry}
+        material={materials.material_2}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.BookpolySurface28_Booklam_back_bits_0.geometry}
+        material={materials.Booklam_back_bits}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Evil_HatpPlane1_Evil_HatsolidShader_0.geometry}
+        material={materials.PaletteMaterial003}
+        position={[-1.057, 0, 0]}
+        rotation={[0, 0.224, 0]}
+        scale={0.832}
+      />
     </group>
   );
 });
 
-export default Model;
-useGLTF.preload("/models/skull_salazar_downloadable.glb");
+export default Wizard;
+useGLTF.preload("/models/wizard-transformed.glb");
