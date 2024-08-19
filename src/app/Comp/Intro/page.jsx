@@ -211,17 +211,9 @@ import { FaGithub, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Particles from "./Particles/page";
 import NumberAnimation from "./NumberAnimation/page";
-import Three from './Model/page'
+// import Three from './Model/page'
 
 const Page = () => {
-  const handleDownload = () => {
-    // Replace 'resume.pdf' with the actual path to your resume file
-    const downloadPath = "/HammadHussainnCV.pdf";
-    const link = document.createElement("a");
-    link.href = downloadPath;
-    link.download = "Your_Name_Resume.pdf"; // Set desired file name here
-    link.click();
-  };
   return (
     <div className="h- bg-gradient-to-r from-purple-95 h to-purple-70 text-white">
       <Particles />
@@ -362,7 +354,7 @@ const Page = () => {
           {/* //   <div  */}
           {/* //    className="sm:block hidden border-4 border-purple-80 border-opacity-40 hover:border-opacity-100 cursor-pointer hover:rotate-1 transition-all hover:ease-linear duration-75 rotate-3 rounded-3xl bg-blak w-fit h-fit"
           // > */}
-            <Three/>
+            {/* <Three/> */}
 
             {/* </div> */}
           </motion.div>

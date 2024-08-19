@@ -83,13 +83,13 @@
 
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 // export default function Model() {
 //   const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
-  
+
 //   const modelRef = useRef();
 //   // useEffect(() => {
 
@@ -124,24 +124,27 @@ import { useFrame } from "@react-three/fiber";
 
 // useGLTF.preload("/skull_salazar_downloadable.glb");
 
-const Model = () => {
+const Model = React.memo(function Model() {
   // const { nodes, materials } = useGLTF("/skull_salazar_downloadable.glb");
-  
-  const modelPath = "/skull_salazar_downloadable.glb"; // Ensure this path is correct
+
+  const [modelPath, setModelPath] = useState(null);
+
+  useEffect(() => {
+    setModelPath("/models/skull_salazar_downloadable.glb"); // Ensure this path is correct
+  }, []);
+
   const { nodes, materials } = useGLTF(modelPath);
-  
+
   const modelRef = useRef();
   // useEffect(() => {
   // }, []);
 
   useFrame(() => {
-    // if (modelRef.current) {
-      modelRef.current.rotation.y += 0.007;
-    // }
+    modelRef.current.rotation.y += 0.007;
   });
 
   return (
-    <group   ref={modelRef}>
+    <group dispose={null} ref={modelRef}>
       <group rotation={[-Math.PI / 2, 0.019, 0]} scale={[3, 3, 3]}>
         <group rotation={[2.2, 0, 0]}>
           <mesh
@@ -160,7 +163,7 @@ const Model = () => {
       </group>
     </group>
   );
-}
+});
 
-export default Model
+export default Model;
 useGLTF.preload("/skull_salazar_downloadable.glb");
